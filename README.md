@@ -3,7 +3,7 @@ CSIT x SWITCH Hackathon Event
 Devblokes Team:
 - Aldric Xavier Lim
 - Hina Lee
-- Zi Jian Tuang
+- Zi Jian Tung
 - Aniket Saxena
 - Shahrin Rahman
 
