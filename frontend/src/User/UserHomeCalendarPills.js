@@ -1,22 +1,22 @@
-import React, { useState } from 'react'
-import "./UserHomeCalendarPills.css"
+import React from 'react';
+import "./UserHomeCalendarPills.css";
 
-const UserHomeCalendarPills = () => {
-
-    return(
-        <div className = "UserHomeCalendarPillsContainer">
+const UserHomeCalendarPills = ({ day, month, event, club, time }) => {
+    return (
+        <div className="UserHomeCalendarPillsContainer">
             <div className="TagDetails">
                 <div className="DateTag">
-                    <span className="DateTagDay">14</span>
-                    <span className="DateTagMonth">Sept</span>
+                    <span className="DateTagDay">{day}</span>
+                    <span className="DateTagMonth">{month}</span>
                 </div>
                 <div className="DescriptionTag">
-                    <span className="DescriptionTagEvent">Hackathon</span>
-                    <span className="DescriptionTagClub">CSIT</span>
-                    <span className="DescriptionTagTime">8:00am to 11:59pm</span>
+                    <span className="DescriptionTagEvent">{event}</span>
+                    <span className="DescriptionTagClub">{club}</span>
+                    <span className="DescriptionTagTime">{time}</span>
                 </div>
             </div>
         </div>
-    )
-}
-export default UserHomeCalendarPills
+    );
+};
+
+export default UserHomeCalendarPills;

@@ -6,6 +6,7 @@ import UserHomeEventList from "./UserHomeEventList";
 import UserHomeCalendar from "./UserHomeCalendar";
 import UserHomeCalendarPillsList from "./UserHomeCalendarPillsList";
 import { KeyboardArrowRight, KeyboardArrowLeft } from '@mui/icons-material';
+import UserHomePopoutOptions from "./UserHomePopoutOptions";
 
 const UserHome = () => {
     const [isRightArrow, setIsRightArrow] = useState(true);
@@ -27,9 +28,10 @@ const UserHome = () => {
                         {isRightArrow ? <KeyboardArrowRight/> : <KeyboardArrowLeft/>}
                     </div>
                     <div className={`sliding-container ${isContainerVisible ? 'visible' : ''}`}>
+                        <UserHomePopoutOptions />
                     </div>
                 </div>
-                <div className="UserHomeMiddle" style={{ marginLeft: isContainerVisible ? '250px' : '0' }}>
+                <div className="UserHomeMiddle" style={{ marginLeft: isContainerVisible ? '300px' : '0' }}>
                     <UserHomeEventList />
                 </div>
                 <div className="UserHomeRight">

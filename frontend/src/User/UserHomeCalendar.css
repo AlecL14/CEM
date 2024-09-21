@@ -1,5 +1,5 @@
 .UserHomeCalendarContainer {
-    width: 300px;
+    width: 280px;
     margin: 0 auto;
     margin-bottom: 30px;
 }
@@ -29,15 +29,6 @@
 
 .react-calendar__month-view__days__day--weekend {
     color: #000;
-}
-
-.dot {
-    height: 6px;
-    width: 6px;
-    background-color: red;
-    border-radius: 50%;
-    display: inline-block;
-    margin-top: 5px;
 }
 
 .react-calendar__month-view__days__day {

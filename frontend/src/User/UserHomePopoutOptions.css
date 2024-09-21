@@ -1,0 +1,95 @@
+.UserHomePopoutOptionsContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+
+.Arts{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+.ArtClubs {
+    display: flex;
+    font-weight: normal;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+.Engineering{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+.IT{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+.ITClubs {
+    display: flex;
+    font-weight: normal;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+.Sports{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+.Culinary{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+.Science{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+.SeperatorLine {
+    background-color: White;
+    width: 160px;
+    height: 1px;
+    margin-top: 30px;
+    transition: background-color 0.3s;
+}
+
+.ToggleOptions {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+.ResetFilters {
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    bottom: -10px;
+    left: 55px;
+    width: 100%;
+    height: 50px; 
+}
+
+.UserHomePopoutOptionsContainer span {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.UserHomePopoutOptionsContainer span svg {
+    margin-right: 4px; 
+}
