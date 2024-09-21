@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
 import UserNavbar from "./UserNavbar";
 import UserHomeFilterBar from "./UserHomeFilterBar";
+import UserHomeEventList from "./UserHomeEventList"
 
 const UserHome = () => {
 
     return(
         <div className = "UserHomeContainer">
-            <div className = "UserNavBarContainer"><UserNavbar /></div>
+            <UserNavbar />
             <UserHomeFilterBar />
+            <UserHomeEventList />
             
         </div>
     )
