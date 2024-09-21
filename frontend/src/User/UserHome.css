@@ -1,3 +1,8 @@
 .UserHomeContainer {
     background-color: #F3F3F3;
 }
+
+.UserHomeContent {
+    display: flex;
+    flex-direction: row;
+}
