@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useEffect, useState} from 'react'
 import "./UserHomeEventList.css"
 import HackathonImage from "../img/Hackathon.png"
 import NatureImage from "../img/NatureWalk.png"
@@ -6,6 +6,7 @@ import PettingZooImage from "../img/PettingZoo.png"
 import PlushyImage from "../img/Plushy.png"
 
 import UserHomeEvent from "./UserHomeEvent"
+import {getAllEvents} from "../services/api";
 
 const UserHomeEventList = () => {
     const [events, setEvents] = useState([]);
