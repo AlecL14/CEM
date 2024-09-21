@@ -1,35 +1,34 @@
-import React, { useState } from 'react'
-import EventImage from "../img/Hackathon.png"
-import "./UserHomeEvent.css"
+import React from 'react';
+import "./UserHomeEvent.css";
 
-const UserHomeEvent = () => {
-
-    return(
+const UserHomeEvent = ({ title, image, date, fee, location, description }) => {
+    return (
         <div className="UserHomeEventContainer">
             <div className="EventTitle">
-                SWITCH x CSIT Hackathon | @Switch & @CSIT
+                {title}
             </div>
             <div className="EventInformation">
-                <div className="EventImage"><img src={EventImage}/></div>
-
+                <div className="EventImage">
+                    <img src={image} alt="Event" />
+                </div>
                 <div className="EventDetails">
                     <div className="EventDate">
-                        Date: 14-16 Sept 2024
+                        Date: {date}
                     </div>
                     <div className="EventFee">
-                        Fee: Free
+                        Fee: {fee}
                     </div>
                     <div className="EventLocation">
-                        Location: TBD
+                        Location: {location}
                     </div>
-                    <div className="EventSeperatorLine"/>
-
+                    <div className="EventSeperatorLine" />
                     <div className="EventDescription">
-                        Come join us for an amazing week of coding!
+                        {description}
                     </div>
                 </div>
             </div>
         </div>
-    )
-}
-export default UserHomeEvent
+    );
+};
+
+export default UserHomeEvent;

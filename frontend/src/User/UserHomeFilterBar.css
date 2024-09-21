@@ -16,6 +16,16 @@
     padding-left: 20px;
 }
 
+.UserHomeFilterContainer span {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.UserHomeFilterContainer span svg {
+    margin-right: 4px;
+}
+
 
 
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./UserHomePopoutOptions.css"
-import {CheckBoxOutlineBlank} from "@mui/icons-material";
+import {CheckBox, CheckBoxOutlineBlank} from "@mui/icons-material";
 
 const UserHomePopoutOptions = () => {
 
@@ -20,8 +20,8 @@ const UserHomePopoutOptions = () => {
                 <div className="IT">
                     IT
                     <div className="ITClubs">
-                        <span className="CSIT"><CheckBoxOutlineBlank/> CSIT</span>
-                        <span className="SWITCH"><CheckBoxOutlineBlank/> SWITCH</span>
+                        <span className="CSIT"><CheckBox /> CSIT</span>
+                        <span className="SWITCH"><CheckBox /> SWITCH</span>
                         <span className="Hackathon"><CheckBoxOutlineBlank/> Hackathon</span>
                         <span className="CodeMonkeys"><CheckBoxOutlineBlank/> Code Monkeys</span>
                     </div>

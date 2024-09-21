@@ -8,12 +8,12 @@ const UserHomeFilterBar = () => {
 
     return(
         <div className = "UserHomeFilterContainer">
-            <div className = "CategoryDropdownFilter">
-                Category
+            <div className="CategoryDropdownFilter">
+                <span className="Category">Category<KeyboardArrowDown/> </span>
             </div>
-            
-            <div className = "RelevanceDropdownFilter">
-                Relevance
+
+            <div className="RelevanceDropdownFilter">
+                <span className = "Relevance">Relevance<KeyboardArrowDown/> </span>
             </div>
             
             {/*<div ClassName = "DateSelectorFilter">*/}
