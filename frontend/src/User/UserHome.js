@@ -4,9 +4,7 @@ import UserNavbar from "./UserNavbar";
 const UserHome = () => {
 
     return(
-        <div className = "userNavBarContainer"> 
-            <b>Hello</b>
-            
+        <div className = "userNavBarContainer">
             <UserNavbar />
         </div>
     )
