@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 80%;
   height: 80px;
   background-color: #ffffff;
   padding: 0 60px;
@@ -39,4 +39,23 @@
 
 .note {
   margin-right: 25px;
+}
+
+.filterOptions {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  margin-top: 400px; 
+}
+
+.filterOptions div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.filterOptions div:hover {
+  background: #f0f0f0; 
 }

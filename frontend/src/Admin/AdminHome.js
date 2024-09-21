@@ -9,9 +9,6 @@ const AdminHome = () => {
       <div className="adminNavBarContainer">
         <AdminNavbar />
       </div>
-      <div className="adminSearchBarContainer">
-      <AdminSearchbar />
-      </div>
       <div className="adminHomeEventContainer">
       <AdminHomeEvent />
       </div>

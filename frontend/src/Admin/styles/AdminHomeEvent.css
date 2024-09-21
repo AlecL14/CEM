@@ -4,63 +4,133 @@
   align-items: center;
   width: 100%;
   height: 100vh;
-  padding: 20px;
+  padding: 20px; 
   background-color: #ffffff;
   overflow: hidden;
+}
 
+.eventList {
+  width: 100%; 
+  max-width: 1300px; 
+  height: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  overflow-y: auto;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+.eventItem:hover {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.eventItem {
+  border-radius: 15px;
+  width: 100%;
+  max-width: 350px;
+  height: 250px; 
+  margin-bottom: 50px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #333; 
+  position: relative;
+  perspective: 1000px; /* Enable 3D space for flipping */
+}
+
+.event-header h1 {
+  font-size: 34px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.event-header p {
+  font-size: 18px; 
+  margin: 8px 0; 
+}
+
+.event-details p {
+  font-size: 16px; 
+  margin: 5px 0; 
+}
+
+.event-footer {
+  text-align: right;
+  font-size: 16px;
+}
+
+.event-front,
+.event-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hide back when facing front */
+  border-radius: 15px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  transition: transform 0.6s; /* Transition for flip */
+}
+
+.event-front {
+  background-color: inherit; /* Use parent background */
+}
+
+.event-back {
+  background-color: #ffffff; /* Background for back of card */
+  transform: rotateY(180deg); /* Rotate back to hide it */
+}
+
+.eventItem.flipped .event-front {
+  transform: rotateY(180deg); /* Flip front to back */
+}
+
+.eventItem.flipped .event-back {
+  transform: rotateY(0); /* Show back */
+}
+
+.event-description {
+  flex: 1;
+  font-size: 13px; 
+  line-height: 1.4; 
+}
+
+.event-button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #007bff; /* Button color */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.moreInfoButton{
+  padding: 10px;
+  border: none;
+  background-color: #007bff; /* Button color */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+/* Responsiveness for small screens */
+@media only screen and (max-width: 1300px) {
   .eventList {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    overflow-y: auto;
-    padding-bottom: 20px;
-    margin-top: 20px;
+    grid-template-columns: 1fr 1fr;
   }
+}
 
-  .eventItem {
-    border-radius: 15px;
-    width: 100%;
-    max-width: 350px;
-    height: 350px;
-    padding: 20px;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .eventItem:hover {
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
-    transition: 0.3s ease-in;
-    cursor: pointer;
-  }
-
-  .event-header h1 {
-    font-size: 18px;
-    font-weight: bold;
-  }
-
-  .event-details p {
-    margin: 5px 0;
-  }
-
-  .event-footer {
-    text-align: right;
-    font-size: 14px;
-  }
-
-  /* Responsiveness for small screens */
-  @media only screen and (max-width: 1300px) {
-    .eventList {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-
-  @media only screen and (max-width: 800px) {
-    .eventList {
-      grid-template-columns: 1fr;
-    }
+@media only screen and (max-width: 800px) {
+  .eventList {
+    grid-template-columns: 1fr;
   }
 }
