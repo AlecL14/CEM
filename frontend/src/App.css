@@ -1,9 +1,62 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure body and html take full height */
+  overflow: hidden; /* Prevent scrolling if content exceeds the screen */
+}
+
 .mainContainer {
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   height: 100vh;
+  width: 100vw; /* Make sure it takes up full width */
+}
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.mainLoginBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align content at the top */
+  background: #f5f5f5;
+  width: 500px;
+  height: 600px;
+  padding: 25px;
+  border-radius: 30px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.378), 0 16px 20px 0 rgba(0, 0, 0, 0.229);
+  position: relative; /* This is important to ensure the footer stays within the box */
+}
+
+.loginLogo {
+  margin-top: 10%;
+  width: 350px;
+  height: 75px;
+  margin-bottom: 20px;
 }
 
 .titleContainer {
@@ -13,32 +66,7 @@
   font-weight: bolder;
   align-items: center;
   justify-content: center;
-}
-
-.resultContainer,
-.historyItem {
-  flex-direction: row;
-  display: flex;
-  width: 400px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.historyContainer {
-  flex-direction: column;
-  display: flex;
-  height: 200px;
-  align-items: center;
-  flex-grow: 5;
-  justify-content: flex-start;
-}
-
-.buttonContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 260px;
+  margin-bottom: 20px;
 }
 
 .inputContainer {
@@ -46,81 +74,50 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-}
-
-.inputContainer > .errorLabel {
-  color: red;
-  font-size: 12px;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 .inputBox {
   height: 48px;
-  width: 400px;
+  width: 90%; 
+  align-self: center;
   font-size: large;
-  border-radius: 8px;
-  border: 1px solid grey;
-  padding-left: 8px;
-}
-.mainContainer {
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  border-radius: 10px;
+  border: 0px solid grey;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-left: 12px; 
+  padding-right: 12px; 
+  box-sizing: border-box; 
 }
 
-.titleContainer {
-  display: flex;
-  flex-direction: column;
-  font-size: 64px;
-  font-weight: bolder;
-  align-items: center;
-  justify-content: center;
+.inputButton {
+  width: 60%; 
+  align-self: center;
+  height: 48px;
+  font-size: large;
+  border-radius: 20px;
+  background-color: #2cb3b2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.resultContainer,
-.historyItem {
-  flex-direction: row;
-  display: flex;
-  width: 400px;
-  align-items: center;
-  justify-content: space-between;
+.inputButton:hover {
+  background-color: #0056b3;
 }
 
-.historyContainer {
-  flex-direction: column;
-  display: flex;
-  height: 200px;
-  align-items: center;
-  flex-grow: 5;
-  justify-content: flex-start;
-}
-
-.buttonContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 260px;
-}
-
-.inputContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.inputContainer > .errorLabel {
+.errorLabel {
   color: red;
   font-size: 12px;
+  margin-top: 4px;
+  margin-left: 30px;
 }
 
-.inputBox {
-  height: 48px;
-  width: 400px;
-  font-size: large;
-  border-radius: 8px;
-  border: 1px solid grey;
-  padding-left: 8px;
+.loginFooter {
+  margin-top: auto; /* This ensures the footer pushes to the bottom */
+  font-size: 14px;
+  color: #999;
 }
