@@ -8,6 +8,26 @@ import PlushyImage from "../img/Plushy.png"
 import UserHomeEvent from "./UserHomeEvent"
 
 const UserHomeEventList = () => {
+    const [events, setEvents] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+        const fetchEvents = async () => {
+            try {
+                const response = await getAllEvents();
+                setEvents(response.data);
+                setLoading(false);
+            } catch (err) {
+                setError('Failed to fetch events');
+                setLoading(false);
+            }
+        };
+        fetchEvents();
+    }, []);
+
+    if (loading) return <div>Loading...</div>;
+    if (error) return <div>{error}</div>;
 
     return(
         <div className="userHomeEventListContainer">
