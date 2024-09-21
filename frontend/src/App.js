@@ -5,6 +5,8 @@ import AdminMain from './adminMain';
 
 import './App.css';
 
+import UserHome from './User/UserHome.js';
+
 function App() {
   return (
     <div className="App">
@@ -13,6 +15,7 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/userHomePage" element={<UserMain />} />
           <Route path="/adminHomePage" element={<AdminMain />} />
+            <Route path="/" element={<UserHome />} />
         </Routes>
       </BrowserRouter>
     </div>
