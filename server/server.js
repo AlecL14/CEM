@@ -7,7 +7,11 @@ const eventRoutes = require('./src/routes/event.route');
 const app = express();
 
 // Enable CORS support
-app.use(cors());
+app.use(cors({
+    origin: 'http://localhost:3000',
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+}));
 
 // Parse requests of content-type - application/json
 app.use(express.json());
