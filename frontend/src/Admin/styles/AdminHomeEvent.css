@@ -40,7 +40,7 @@
   justify-content: space-between;
   color: #333; 
   position: relative;
-  perspective: 1000px; /* Enable 3D space for flipping */
+  perspective: 1000px; 
 }
 
 .event-header h1 {
@@ -69,31 +69,31 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden; /* Hide back when facing front */
+  backface-visibility: hidden; 
   border-radius: 15px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  transition: transform 0.6s; /* Transition for flip */
+  transition: transform 0.6s;
 }
 
 .event-front {
-  background-color: inherit; /* Use parent background */
+  background-color: inherit; 
 }
 
 .event-back {
-  background-color: #ffffff; /* Background for back of card */
-  transform: rotateY(180deg); /* Rotate back to hide it */
+  background-color: #ffffff; 
+  transform: rotateY(180deg); 
 }
 
 .eventItem.flipped .event-front {
-  transform: rotateY(180deg); /* Flip front to back */
+  transform: rotateY(180deg); 
 }
 
 .eventItem.flipped .event-back {
-  transform: rotateY(0); /* Show back */
+  transform: rotateY(0);
 }
 
 .event-description {
@@ -106,7 +106,7 @@
   margin-top: 10px;
   padding: 10px;
   border: none;
-  background-color: #007bff; /* Button color */
+  background-color: #007bff; 
   color: white;
   border-radius: 5px;
   cursor: pointer;
@@ -115,7 +115,7 @@
 .moreInfoButton{
   padding: 10px;
   border: none;
-  background-color: #007bff; /* Button color */
+  background-color: #007bff; 
   color: white;
   border-radius: 5px;
   cursor: pointer;

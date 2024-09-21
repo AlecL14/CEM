@@ -4,7 +4,7 @@ import EventItem from "./eventItem";
 import { eventList } from "./eventList";
 import AdminSearchbar from "./AdminSearchbar";
 
-const colors = ["#f8d7da", "#d4edda", "#d1ecf1", "#fff3cd", "#d1c4e9"];
+const colors = ["#f8d7da", "#d4edda", "#d1ecf1", "#fff3cd"];
 
 const AdminHomeEvent = () => {
   const [filteredEvents, setFilteredEvents] = useState(eventList);

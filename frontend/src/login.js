@@ -48,6 +48,11 @@ const Login = () => {
     } else {
       setEmailError("Invalid email or password");
     }
+    if (email === "s3910654@student.remit.edu.au") {
+      navigate("/userHomePage", { state: { loggedIn: true, email } });
+  } else {
+    setEmailError("Invalid email or password");
+  }
 
   };
 
