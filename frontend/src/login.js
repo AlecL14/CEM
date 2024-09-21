@@ -38,13 +38,13 @@ const Login = () => {
     }
 
     if (email === "admin@admin.com") {
-        navigate("/userHomePage", { state: { loggedIn: true, email } });
+        navigate("/adminHomePage", { state: { loggedIn: true, email } });
     } else {
       setEmailError("Invalid email or password");
     }
 
     if (email === "user@user.com") {
-        navigate("/adminHomePage", { state: { loggedIn: true, email } });
+        navigate("/userHomePage", { state: { loggedIn: true, email } });
     } else {
       setEmailError("Invalid email or password");
     }
