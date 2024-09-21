@@ -7,7 +7,7 @@ const UserHomeEvent = () => {
     return(
         <div className="UserHomeEventContainer">
             <div className="EventTitle">
-                SWITCH x CSIT Hackacthon | @Switch & @CSIT
+                SWITCH x CSIT Hackathon | @Switch & @CSIT
             </div>
             <div className="EventInformation">
                 <div className="EventImage"><img src={EventImage}/></div>

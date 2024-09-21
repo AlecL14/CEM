@@ -6,10 +6,11 @@ import UserHomeEvent from "./UserHomeEvent"
 const UserHomeEventList = () => {
 
     return(
-        <div className = "userHomeEventListContainer">
-            <UserHomeEvent />
-            <UserHomeEvent />
-            <UserHomeEvent />
+        <div className="userHomeEventListContainer">
+            <UserHomeEvent/>
+            <UserHomeEvent/>
+            <UserHomeEvent/>
+            <UserHomeEvent/>
         </div>
     )
 }

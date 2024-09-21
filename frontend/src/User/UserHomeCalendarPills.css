@@ -1,0 +1,64 @@
+.UserHomeCalendarPillsContainer {
+    padding-left: 15px;
+}
+
+.TagDetails {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 26px;
+}
+
+.DateTag {
+    display: flex;
+    flex-direction: column;
+    background-color: #F55D5D;
+    width: 88px;
+    height: 81px;
+    border-radius: 20px 0 0 20px;
+}
+
+.DateTagDay {
+    margin-top: 16px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.DateTagMonth {
+    margin-left: 24px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.DescriptionTag {
+    display: flex;
+    flex-direction: column;
+    background-color: #FCFAF9;
+    width: 205px;
+    height: 81px;
+    border-radius: 0 20px 20px 0;
+    transition: background-color 0.3s;
+}
+
+.DescriptionTag:hover {
+    background-color: #E4E4E4;
+}
+
+.DescriptionTagEvent {
+    margin-top: 11px;
+    margin-left: 14px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.DescriptionTagClub {
+    margin-left: 14px;
+    font-size: 15px;
+}
+
+.DescriptionTagTime {
+    margin-left: 14px;
+    font-size: 20px;
+}

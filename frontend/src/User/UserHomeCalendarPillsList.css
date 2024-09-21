@@ -1,0 +1,4 @@
+.userHomeCalendarPillsContainer {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,3 +1,23 @@
 .UserHomeContainer {
     background-color: #F3F3F3;
 }
+
+.UserHomeContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.UserHomeLeft {
+    width: 50px;
+}
+
+.UserHomeMiddle {
+    flex-grow: 1;
+}
+
+.UserHomeRight {
+    display: flex;
+    flex-direction: column;
+    width: 365px;
+}

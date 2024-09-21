@@ -28,6 +28,7 @@
 .EventImage {
     padding-top: 6px;
     padding-left: 42px;
+    padding-bottom: 5px;
 }
 
 .EventDetails {
@@ -39,7 +40,7 @@
 
 .EventSeperatorLine {
     background-color: #8F8F8F;
-    width: 455px;
+    width: 405px;
     height: 1px;
     margin-top: 10px;
     transition: background-color 0.3s;
