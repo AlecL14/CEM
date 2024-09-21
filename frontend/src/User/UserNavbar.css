@@ -32,7 +32,14 @@
     align-items: center;
     justify-content: center;
     padding: 0 20px;
+    border-left: 2px solid #38B6FF;
+    border-right: 2px solid #38B6FF;
 }
+
+.searchbar-text {
+    opacity: 0.5; 
+}
+
 
 .userNavbarProfile {
     position: absolute;
