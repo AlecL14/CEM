@@ -1,0 +1,42 @@
+.adminSearchBarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+  padding: 0 60px;
+}
+
+.adminSearchbar {
+  flex-grow: 1;
+  max-width: 600px;
+  height: 40px;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.adminSearchInput {
+  background-color: #e0e0e0;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+}
+
+.adminIconsContainer {
+  display: flex;
+  align-items: center;
+}
+
+.filter {
+  margin-right: 20px;
+}
+
+.note {
+  margin-right: 25px;
+}

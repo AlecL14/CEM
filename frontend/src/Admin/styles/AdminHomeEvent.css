@@ -1,0 +1,66 @@
+.adminHomeEventContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  background-color: #ffffff;
+  overflow: hidden;
+
+  .eventList {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    overflow-y: auto;
+    padding-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .eventItem {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    padding: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .eventItem:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+
+  .event-header h1 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .event-details p {
+    margin: 5px 0;
+  }
+
+  .event-footer {
+    text-align: right;
+    font-size: 14px;
+  }
+
+  /* Responsiveness for small screens */
+  @media only screen and (max-width: 1300px) {
+    .eventList {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .eventList {
+      grid-template-columns: 1fr;
+    }
+  }
+}

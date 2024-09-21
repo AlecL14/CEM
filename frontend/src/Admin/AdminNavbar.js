@@ -1,5 +1,5 @@
 import React from "react";
-import "./AdminNavbar.css";
+import "./styles/AdminNavbar.css";
 import logo from "../img/Logo.png";
 import Person from "@mui/icons-material/Person";
 import Home from "@mui/icons-material/Home";
@@ -8,9 +8,7 @@ import Notifications from "@mui/icons-material/Notifications";
 const AdminNavbar = () => {
   return (
     <div className="adminNavBarContainer">
-      <div className="home">
-        <Home />
-      </div>
+      <Home />
       <div className="adminNavbarLogo">
         <img src={logo} alt="Logo" />
       </div>

@@ -6,7 +6,7 @@
   width: 100%;
   height: 80px;
   background-color: #f8f8f8;
-  padding: 0 60px;
+  padding: 0 20px;
 }
 
 .adminNavbarLogo img {
@@ -22,13 +22,9 @@
 }
 
 .notification {
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
-.home {
-
-  }
-
 .person {
-    margin-left: 10px; 
-  }
+    margin-right: 25px;
+}
