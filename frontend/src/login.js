@@ -42,6 +42,11 @@ const Login = () => {
     } else {
       setEmailError("Invalid email or password");
     }
+    if (email === "admin@CSIT.com") {
+      navigate("/adminHomePage", { state: { loggedIn: true, email } });
+  } else {
+    setEmailError("Invalid email or password");
+  }
 
     if (email === "user@user.com") {
         navigate("/userHomePage", { state: { loggedIn: true, email } });
