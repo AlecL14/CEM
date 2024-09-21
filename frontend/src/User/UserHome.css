@@ -9,11 +9,46 @@
 }
 
 .UserHomeLeft {
-    width: 50px;
+    position: relative;
+    width: 200px; 
+    transition: width 0.3s ease;
+}
+
+.UserMenuMoreOptions {
+    position: absolute;
+    top: 50%; 
+    left: 0; 
+    transform: translateY(-50%); 
+    padding-left: 15px; 
+    cursor: pointer;
+    transition: left 0.3s ease;
+    z-index: 1;
+}
+
+.UserMenuMoreOptions.visible {
+    left: 200px;
+}
+
+.sliding-container {
+    width: 200px;
+    position: absolute;
+    left: -200px;
+    top: 20px;
+    margin-right: 10px;
+    height: 95%;
+    background-color: #D9D9D9;
+    transition: left 0.3s ease;
+    z-index: 1;
+    border-radius: 0 20px 20px 0;
+}
+
+.sliding-container.visible {
+    left: 0;
 }
 
 .UserHomeMiddle {
     flex-grow: 1;
+    transition: margin-left 0.3s ease;
 }
 
 .UserHomeRight {

@@ -1,26 +1,44 @@
-import React, { useState } from 'react'
-import "./UserHome.css"
+import React, { useState } from 'react';
+import "./UserHome.css";
 import UserNavbar from "./UserNavbar";
 import UserHomeFilterBar from "./UserHomeFilterBar";
-import UserHomeEventList from "./UserHomeEventList"
+import UserHomeEventList from "./UserHomeEventList";
 import UserHomeCalendar from "./UserHomeCalendar";
 import UserHomeCalendarPillsList from "./UserHomeCalendarPillsList";
+import { KeyboardArrowRight, KeyboardArrowLeft } from '@mui/icons-material';
 
 const UserHome = () => {
+    const [isRightArrow, setIsRightArrow] = useState(true);
+    const [isContainerVisible, setContainerVisible] = useState(false);
 
-    return(
+    const handleMoreOptionsClick = () => {
+        setIsRightArrow(!isRightArrow);
+        setContainerVisible(prev => !prev);
+    };
+
+    return (
         <div className="UserHomeContainer">
-            <UserNavbar/>
-            <UserHomeFilterBar/>
+            <UserNavbar />
+            <UserHomeFilterBar />
             <div className="UserHomeContent">
-                <div className="UserHomeLeft"></div>
-                <div className="UserHomeMiddle"><UserHomeEventList /></div>
+                <div className="UserHomeLeft">
+                    <div className={`UserMenuMoreOptions ${isContainerVisible ? 'visible' : ''}`}
+                         onClick={handleMoreOptionsClick}>
+                        {isRightArrow ? <KeyboardArrowRight/> : <KeyboardArrowLeft/>}
+                    </div>
+                    <div className={`sliding-container ${isContainerVisible ? 'visible' : ''}`}>
+                    </div>
+                </div>
+                <div className="UserHomeMiddle" style={{ marginLeft: isContainerVisible ? '250px' : '0' }}>
+                    <UserHomeEventList />
+                </div>
                 <div className="UserHomeRight">
-                    <div className = "UserHomeCalendar"> <UserHomeCalendar /> </div>
-                    <div className = "UserHomeCalendarPillsList"><UserHomeCalendarPillsList /></div>
+                    <div className="UserHomeCalendar"><UserHomeCalendar /></div>
+                    <div className="UserHomeCalendarPillsList"><UserHomeCalendarPillsList /></div>
                 </div>
             </div>
         </div>
-    )
-}
-export default UserHome
+    );
+};
+
+export default UserHome;
