@@ -5,7 +5,7 @@ import Person from "@mui/icons-material/Person";
 
 
 
-const userNavbar = () => {
+const UserNavbar = () => {
     
     return(
         <div className = "userNavBarContainer">
@@ -15,4 +15,5 @@ const userNavbar = () => {
         </div>
     )
 }
-export default userNavbar
+
+export default UserNavbar
